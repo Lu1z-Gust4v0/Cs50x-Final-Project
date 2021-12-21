@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    article-page
+{% endblock %}
+
+{% block main %}
+<section id="article-page">
+  <section class="article-section">
+    <div class="dark-mode">
+      <ion-icon class="moon" name="moon-outline"></ion-icon>
+      <ion-icon class="sun" name="sunny-outline"></ion-icon>
+    </div>
+    <section class="article-content">
+      <article>
+        <header>
+          <h1>Smart Contracts</h1>
+        </header>
+        <section>
+          <h2>What it is</h2>
+          <p>A smart contract is a computer program or a transaction protocol which is intended to automatically execute, control or document legally relevant events and actions according to the terms of a contract or an agreement.The objectives of smart contracts are the reduction of need in trusted intermediators, arbitrations and enforcement costs, fraud losses, as well as the reduction of malicious and accidental exceptions. </p>
+
+          <p>Vending machines are mentioned as the oldest piece of technology equivalent to smart contract implementation. 2014's white paper about the cryptocurrency Ethereum describes the Bitcoin protocol as a weak version of the smart contract concept as defined by computer scientist, lawyer and cryptographer Nick Szabo.  Smart contracts should be distinguished from smart legal contracts. The latter refers to a traditional natural language legally-binding agreement which has certain terms expressed and implemented in machine-readable code.</p>
+
+          <p>Once a smart contract is deployed, it cannot be updated. Smart contracts on a blockchain can store arbitrary state and execute arbitrary computations. End clients interact with a smart contract through transactions. Such transactions with a smart contract can invoke other smart contracts. These transactions might result in changing the state and sending coins from one smart contract to another or from one account to another. </p>
+        </section>
+        <section>
+          <h2>Smart Contracts in Ethereum</h2>
+          <p>The most popular blockchain for running smart contracts is Ethereum. On Ethereum, smart contracts are typically written in a Turing-complete programming language called Solidity, and compiled into low-level bytecode to be executed by the Ethereum Virtual Machine. Due to the halting problem and other security problems, Turing-completeness is considered to be a risk and is deliberately avoided by languages like Vyper.</p>
+        </section>
+        <section>
+          <h2>Learn With Videos </h2>
+          <p><a href="https://youtu.be/ZE2HxTmxfrI" target="_blank" rel="external">Smart contracts - Simply Explained</a></p>
+          <p><a href="https://youtu.be/pA6CGuXEKtQ" target="_blank" rel="external">How Smart Contracts Will Change the World</a></p>
+        </section>
+      </article>
+    </section>
+  </section>
+</section>
+{% endblock %}

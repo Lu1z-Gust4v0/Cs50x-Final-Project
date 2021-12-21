@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    article-page
+{% endblock %}
+
+{% block main %}
+<section id="article-page">
+  <section class="article-section">
+    <div class="dark-mode">
+      <ion-icon class="moon" name="moon-outline"></ion-icon>
+      <ion-icon class="sun" name="sunny-outline"></ion-icon>
+    </div>
+    <section class="article-content">
+      <article>
+        <header>
+          <h1>Wallets</h1>
+        </header>
+        <section>
+          <h2>What it is</h2>
+          <p>A wallet stores the information necessary to transact bitcoins. While wallets are often described as a place to hold or store bitcoins, due to the nature of the system, bitcoins are inseparable from the blockchain transaction ledger. A wallet is more correctly defined as something that "stores the digital credentials for your bitcoin holdings" and allows one to access (and spend) them.   Bitcoin uses public-key cryptography, in which two cryptographic keys, one public and one private, are generated. At its most basic, a wallet is a collection of these keys.</p>
+        </section>
+  
+        <section>
+          <h2>Software Wallets</h2>
+          <p>The first wallet program, simply named Bitcoin, and sometimes referred to as the Satoshi client, was released in 2009 by Satoshi Nakamoto as open-source software. There are several modes which wallets can operate in. They have an inverse relationship with regards to trustlessness and computational requirements: </p>
+          <ul>
+            <li>
+              <p><span>Full clients</span> verify transactions directly by downloading a full copy of the blockchain (over 150 GB as of January 2018). They are the most secure and reliable way of using the network, as trust in external parties is not required. Full clients check the validity of mined blocks, preventing them from transacting on a chain that breaks or alters network rules. Because of its size and complexity, downloading and verifying the entire blockchain is not suitable for all computing devices.</p>
+            </li>
+            <li>
+              <p><span>Lightweight</span> clients consult full nodes to send and receive transactions without requiring a local copy of the entire blockchain. This makes lightweight clients much faster to set up and allows them to be used on low-power, low-bandwidth devices such as smartphones. When using a lightweight wallet, however, the user must trust full nodes, as it can report faulty values back to the user. Lightweight clients follow the longest blockchain and do not ensure it is valid, requiring trust in full nodes.</p>
+            </li>
+          </ul>
+          <p>Third-party internet services called online wallets or webwallets offer similar functionality but may be easier to use. In this case, credentials to access funds are stored with the online wallet provider rather than on the user's hardware. As a result, the user must have complete trust in the online wallet provider.</p>
+        </section>
+  
+        <section>
+          <h2>Cold storages</h2>
+          <p>Wallet software is targeted by hackers because of the lucrative potential for stealing bitcoins.mA technique called "cold storage" keeps private keys out of reach of hackers; this is accomplished by keeping private keys offline at all times by generating them on a device that is not connected to the internet.The credentials necessary to spend bitcoins can be stored offline in a number of different ways, from specialized hardware wallets to simple paper printouts of the private key.</p>
+        </section>
+  
+        <section>
+          <h2>Hardware wallets</h2>
+          <p>A hardware wallet is a computer peripheral that signs transactions as requested by the user. These devices store private keys and carry out signing and encryption internally, and do not share any sensitive information with the host computer except already signed (and thus unalterable) transactions. Because hardware wallets never expose their private keys, even computers that may be compromised by malware do not have a vector to access or steal them.</p>
+        </section>
+  
+        <section>
+          <h2>Paper Wallets</h2>
+          <p>A paper wallet is created with a keypair generated on a computer with no internet connection; the private key is written or printed onto the paper and then erased from the computer.The paper wallet can then be stored in a safe physical location for later retrieval. Physical wallets can also take the form of metal token coins with a private key accessible under a security hologram in a recess struck on the reverse side. The security hologram self-destructs when removed from the token, showing that the private key has been accessed</p>
+        </section>
+  
+        <section>
+          <h2>Learn With Videos</h2>
+          <p><a href="https://youtu.be/aPprQUQljHE" target="_blank" rel="external">Hardware Wallets Explained, Reviewed and Compared</a></p>
+        </section>
+      </article>
+    </section>   
+  </section>
+</section>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    learn-page
+{% endblock %}
+
+{% block main %}
+  <section id="learn-page">
+    <section class="learn-section">
+      <div class="dark-mode">
+        <ion-icon class="moon" name="moon-outline"></ion-icon>
+        <ion-icon class="sun" name="sunny-outline"></ion-icon>
+      </div>
+      <section class="learn-content">
+        <article>
+          <header>
+            <h1>Learn</h1>
+          </header>
+          <section>
+            <h2><a href="/learn/articles/cryptocurrencies">Cryptocurrencies</a></h2>
+            <p><span>Cryptocurrencies</span> or "digital cash" are a new mean of payment that are not controlled by any central entity. Their transactions are made through peer-to-peer networks that do not rely on third parties.</p>
+          </section>
+          <section>
+            <h2><a href="/learn/articles/blockchain">Block Chain</a></h2>
+            <p><span>Block Chain</span> is a digital "book" that stores the data of all transactions ever made in the past. Any person can participate and verify its data at any time.
+            </p>
+          </section>
+          <section>
+            <h2><a href="/learn/articles/smartcontracts">Smart Contracts</a></h2>
+            <p><span>Smart Contract</span> is an algorithm stored in a block chain that executes itself when a certain event happens. Its major advantage is to provide security for transactions, since its functionality cannot be alterated.</p>
+          </section>
+          <section>
+            <h2><a href="/learn/articles/wallets">Wallets</a></h2>
+            <p><span>Wallets</span> are computer or mobile apps that allow
+              the people to store their cryptocurrencies. The wallets are protected by encryption that prevents hackers from stealing your coins.</p>
+          </section>
+          <section>
+            <h2><a href="/learn/articles/webthree">Web 3.0</a></h2>
+            <p><span>Web 3.0</span> is a new web paradigm that enables users and machines to interact with data, value and other counterparties via peer-to-peer networks without the need for third parties.</p>
+          </section>
+        </article>
+      </section>
+    </section>
+  </section>
+{% endblock %}

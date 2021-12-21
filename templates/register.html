@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  register-page
+{% endblock %}
+
+{% block main %}
+  <section id="register-page">
+    <section class="form-container register--container"> 
+      <div class="form-container-img register--container-img">
+        <img src="/static/images/phone-2.svg" alt="">
+      </div>
+      <form class="pattern-form register--form" action="/register" method="POST">
+        <header>
+          <h1>Register</h1>
+        </header>
+        <div class="pattern-form-item register--form-item">
+          <label for="register-user">
+            <i class='bx bx-user'></i>
+            <span>Username</span>
+          </label>
+          <input type="text" name="register-user" id="register-user" autocomplete="off">
+        </div>
+        <div class="pattern-form-item register--form-item">
+          <label for="register-email">
+            <i class='bx bx-envelope'></i>
+            <span>Email</span>
+          </label>
+          <input type="email" name="register-email" id="register-email" autocomplete="off">
+        </div>
+        <div class="pattern-form-item register--form-item">
+          <label for="register-password">
+            <i class='bx bx-lock-alt'></i>
+            <span>Password</span>
+          </label>
+          <input type="password" name="register-password" id="register-password" autocomplete="off">
+        </div>
+        <div class="pattern-form-item register--form-item">
+          <label for="confirm-password">
+            <i class='bx bx-lock-alt'></i>
+            <span>Repeat password</span>
+          </label>
+          <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
+        </div>
+        <p>already has an account? <a href="/login">Login</a></p>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <div class="dark-mode">
+      <ion-icon class="moon" name="moon-outline"></ion-icon>
+      <ion-icon class="sun" name="sunny-outline"></ion-icon>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    article-page
+{% endblock %}
+
+{% block main %}
+  <section id="article-page">
+    <section class="article-section">
+      <div class="dark-mode">
+        <ion-icon class="moon" name="moon-outline"></ion-icon>
+        <ion-icon class="sun" name="sunny-outline"></ion-icon>
+      </div>
+      <section class="article-content">
+        <article>
+            <header>
+              <h1>Cryptocurrencies</h1>
+            </header>
+            <section>
+              <h2>The First Cryptocurrency</h2>
+              <p>Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries. Transactions are verified by network nodes through cryptography and recorded in a public distributed ledger called a blockchain. </p>
+              <p>Bitcoins are created as a reward for a process known as mining. They can be exchanged for other currencies, products, and services, but the real-world value of the coins is extremely volatile. The successful miner finding the new block is allowed by the rest of the network to collect for themselves all transaction fees from transactions they included in the block, as well as a pre-determined reward of newly created bitcoins. this reward is currently 6.25 newly created bitcoins per block. To claim this reward, a special transaction called a coinbase is included in the block, with the miner as the payee. </p>
+              <p>All bitcoins in existence have been created through this type of transaction. The bitcoin protocol specifies that the reward for adding a block will be reduced by half every 210,000 blocks, approximately every four years. Eventually, the reward will round down to zero, and the limit of 21 million bitcoins will be reached then the miners will be rewarded by transaction fees only.</p>
+            </section>
+            <section>
+              <h2>Its Creation</h2>
+              <p>The domain name bitcoin.org was registered on 18 August 2008. On 31 October 2008, a link to a paper authored by Satoshi Nakamoto titled Bitcoin: A Peer-to-Peer Electronic Cash System was posted to a cryptography mailing list. Nakamoto implemented the bitcoin software as open-source code and released it in January 2009. Nakamoto's identity remains unknown.</p>
+              <p>On 3 January 2009, the bitcoin network was created when Nakamoto mined the starting block of the chain, known as the genesis block. The receiver of the first bitcoin transaction was Hal Finney, who had created the first reusable proof-of-work system in 2004. Finney downloaded the bitcoin software on its release date, and on 12 January 2009 received ten bitcoins from Nakamoto. Other early cypherpunk supporters were creators of bitcoin predecessors: Wei Dai, creator of b-money, and Nick Szabo, creator of bit gold. In 2010, the first known commercial transaction using bitcoin occurred when programmer Laszlo Hanyecz bought two Papa John's pizzas for 10,000 bitcoins. </p>
+              <p>Blockchain analysts estimate that Nakamoto had mined about one million bitcoins before disappearing in 2010 when he handed the network alert key and control of the code repository over to Gavin Andresen. Andresen later became lead developer at the Bitcoin Foundation. Andresen then sought to decentralize control. This left opportunity for controversy to develop over the future development path of bitcoin, in contrast to the perceived authority of Nakamoto's contributions.</p>
+            </section>
+            <section>
+              <h2>Altcoins</h2>
+              <p>The term “altcoin” refers to any cryptocurrency that has launched since Bitcoin (BTC). In the early days of Bitcoin, developers forked the open-source code to create new currencies. Over time, these Bitcoin alternatives began to diverge further from their progenitor with different supply schedules and privacy features. These include Litecoin (LTC) and Zcash (ZEC), among others.</p>
+              <p>The rise of altcoins and their respective blockchain networks marks an era of experimentation and maturation within the crypto industry, as a wider range of use cases of the technology have become possible. The most valuable altcoins are Ethereum, Cardano, Binance Coin, and Tether.</p>
+            </section>
+            <section>
+              <h2>Stablecoins</h2>
+              <p>Stablecoins are cryptocurrencies where the price is designed to be pegged to a cryptocurrency, fiat money, or to exchange-traded commodities, such as precious metals or industrial metals. Advantages of asset backed cryptocurrencies are that coins are stabilized by assets that fluctuate outside of the cryptocurrency space, that is, the underlying asset is not correlated, reducing financial risk. </p>
+              <p>Bitcoin and altcoins are highly correlated, so that cryptocurrency holders cannot escape widespread price falls without exiting the market or taking refuge in asset backed stablecoins. Furthermore, such coins, assuming they are managed in good faith, and have a mechanism for redeeming the asset(s) backing them, are unlikely to drop below the value of the underlying physical asset, due to arbitrage.</p>
+            </section>
+            <section>
+              <h2>Learn With Videos</h2>
+              <p><a href="https://youtu.be/W15A7Lf0_fI" target="_blank" rel="external">Where did bitcoin come from? - The True Story</a></p>
+              <p><a href="https://youtu.be/hNA1UNR81yc" target="_blank" rel="external">Altcoins and Icos explained in Plain English</a></p>
+              <p><a href="https://youtu.be/GsSSLDzKCOE" target="_blank" rel="external">What are Stablecoins? What is Tether?</a></p>
+            </section>
+        </article>
+      </section>
+    </section>
+  </section>
+{% endblock %}

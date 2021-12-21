@@ -1,0 +1,304 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    quiz-page
+{% endblock %}
+
+{% block main %}
+<script defer src="/static/quiz.js"></script>
+
+<section id="quiz-page">
+  <div class="dark-mode">
+    <ion-icon class="moon" name="moon-outline"></ion-icon>
+    <ion-icon class="sun" name="sunny-outline"></ion-icon>
+  </div>
+  <section class="quiz-container">
+    <header>
+      <h1>Quiz</h1>
+    </header>
+    <div class="quiz">
+      <ul class="card-list">
+        <li class="quiz-card start-point current-card">
+          <img src="/static/images/testing.svg" alt="man choosing between two pages">
+          <p class="msg"><span>Tip:</span> Before trying to solve the quiz make sure you know the basics of the topics covered in the learning section.</p>
+          <button class="start-quiz">Start Quiz</button>
+        </li>
+        <li class="quiz-card">
+          <p><span>01.</span> What's the name of the first attempt of decentralized cryptographic money?</p>
+          <ul>
+            <li class="option A">a) Bit Gold</li>
+            <li class="option B">b) Bitcoin</li>
+            <li class="option C">c) B-money</li>
+            <li class="option D">d) DigiCash</li>
+          </ul>
+          <div class="buttons">
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>02.</span> what's the name of the consensus used in bitcoin mining?</p>
+          <ul>
+            <li class="option A">a) Proof of stake</li>
+            <li class="option B">b) Proof of history</li>
+            <li class="option C">c) Proof of work</li>
+            <li class="option D">d) Proof of value</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>03.</span>Which of the following cryptocurrencies use the proof of stake consensus?</p>
+          <ul>
+            <li class="option A">a) Monero and Dogecoin</li>
+            <li class="option B">b) Cardano and Solana</li>
+            <li class="option C">c) Cardano and Ethereum</li>
+            <li class="option D">d) Bitcoin and Litecoin</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>04.</span>What's the pseudonim used by the person or the group whose created the Bitcoin?</p>
+          <ul>
+            <li class="option A">a) Hal Finney</li>
+            <li class="option B">b) Dorian Satoshi Nakamoto</li>
+            <li class="option C">c) Nick Szabo</li>
+            <li class="option D">d) Satoshi Nakamoto</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>05.</span>"Cryptocurrencies where the price is designed to be pegged to a cryptocurrency, fiat money or to exchange-traded commodities"</p>
+          <ul>
+            <li class="option A">a) Altcoins</li>
+            <li class="option B">b) Stablecoins</li>
+            <li class="option C">c) Digital money</li>
+            <li class="option D">d) Stable cash</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>06.</span>Refers to any cryptocurrency that has launched since Bitcoin</p>
+          <ul>
+            <li class="option A">a) Altcurrencies</li>
+            <li class="option B">b) Stablecoins</li>
+            <li class="option C">c) Alternative Cryptocurrencies</li>
+            <li class="option D">d) Hash coins</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>07.</span>What's the name of the bitcoin user that made the first commercial transaction in Bitcoin?</p>
+          <ul>
+            <li class="option A">a) Nick Paul</li>
+            <li class="option B">b) Gavin Andresen</li>
+            <li class="option C">c) John Paul</li>
+            <li class="option D">d) Laszlo Hanyecz</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>08.</span>"A growing list of records, called blocks, that are linked together using cryptography."</p>
+          <ul>
+            <li class="option A">a) Block Chain </li>
+            <li class="option B">b) Cryptocurrencies</li>
+            <li class="option C">c) Smart Contracts</li>
+            <li class="option D">d) Cryptocurrency wallet</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>09.</span>There are 3 types of Cryptocurrency wallets, which are:</p>
+          <ul>
+            <li class="option A">a) Software Wallets, Hard Wallets, and Cold Storage</li>
+            <li class="option B">b) Software Wallets, Hard Wallets, and Paper Wallets</li>
+            <li class="option C">c) Online Wallets, Offline Wallets, and Digital Wallets</li>
+            <li class="option D">d) Offline Wallets, Paper Wallets, and Software Wallets</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>10.</span>The person who proposed the idea of "smart contracts".</p>
+          <ul>
+            <li class="option A">a) Nick Szabo</li>
+            <li class="option B">b) Satoshi Nakamoto</li>
+            <li class="option C">c) Hal Finney</li>
+            <li class="option D">d) Nick Paul</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>11.</span>What's the solution of the double-expending problem without the need of a trusted authority or a central server?</p>
+          <ul>
+            <li class="option A">a) Proof of Work concensus</li>
+            <li class="option B">b) Block Chain </li>
+            <li class="option C">c) Cryptograph</li>
+            <li class="option D">d) Hash Algorithm</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>12.</span>What's the cryptography used that is used by bitcoin?</p>
+          <ul>
+            <li class="option A">a) pseudorandomness</li>
+            <li class="option B">b) SHA-512</li>
+            <li class="option C">c) SHA-256</li>
+            <li class="option D">d) public-key</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>13.</span>What are the two modes which wallets can operate in?</p>
+          <ul>
+            <li class="option A">a) Secure clients and Lightweight clients</li>
+            <li class="option B">b) Secure clients and Fast clients</li>
+            <li class="option C">c) Full clients and Lightweight clients</li>
+            <li class="option D">d) Full clients and Fast clients</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>14.</span>What are the objectives of smart contracts?</p>
+          <ul>
+            <li class="option A">a) Making reliable aggreements without the need of intermediators.</li>
+            <li class="option B">b) Reduction of frauds in online transactions. </li>
+            <li class="option C">c) Allowing people to create Dapps.</li>
+            <li class="option D">d) All the alternatives above</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>15.</span>They are mentioned as the oldest piece of technology equivalent to smart contract implementation. </p>
+          <ul>
+            <li class="option A">a) Cryptocurrencies wallets</li>
+            <li class="option B">b) Vending Machines</li>
+            <li class="option C">c) Dapps</li>
+            <li class="option D">d) Bitcoin protocol</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>16.</span>What's the most popular blockchain for running smart contracts?</p>
+          <ul>
+            <li class="option A">a) Bitcoin</li>
+            <li class="option B">b) Ethereum</li>
+            <li class="option C">c) Cardano</li>
+            <li class="option D">d) Solana</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>17.</span>What's the programming language which smart contracts are written on Ethereum?</p>
+          <ul>
+            <li class="option A">a) Javascript</li>
+            <li class="option B">b) C++</li>
+            <li class="option C">c) Viper</li>
+            <li class="option D">d) Solidity</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>18.</span>What's the goal of the Web 3.0?</p>
+          <ul>
+            <li class="option A">a) to make Internet data machine-readable.</li>
+            <li class="option B">b) to make Internet more decentralized.</li>
+            <li class="option C">c) The creation a permissionless network.</li>
+            <li class="option D">d) Turn the Internet faster.</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>19.</span>What drove the web 2.0?</p>
+          <ul>
+            <li class="option A">a) the advent of mobile, social and cloud.</li>
+            <li class="option B">b) the advent of the ESG investiments.</li>
+            <li class="option C">c) The improvement of the internet connection speed in the entire world.</li>
+            <li class="option D">d) The development of new technologies associated with the Internet.</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="confirm-option">Next</button>
+          </div>
+        </li>
+        <li class="quiz-card">
+          <p><span>20.</span>What are the three new layers of technological innovation that Web 3.0 is built on?</p>
+          <ul>
+            <li class="option A">a) Smart Contracst, Dapps and decentralised data networks</li>
+            <li class="option B">b) Smart Contracts, Dapps and DAOs</li>
+            <li class="option C">c) edge computing, decentralised data networks and artificial intelligence</li>
+            <li class="option D">d) Internet of things, Artificial Intelligence and Smart Contracts</li>
+          </ul>
+          <div class="buttons">
+            <button class="previous">Prev</button>
+            <button class="finish-quiz">Finish</button>
+          </div>
+        </li>
+        <li class="quiz-card quiz-result">
+          <h2>Congratulations</h2>
+          <img src="/static/images/congratulations.svg" alt="people having fun with ballons">
+          <p>You successfully completed the crypto quiz.</p>
+          <div class="stats-container">
+            <div class="stats-item">
+              <h3>Your Score</h2>
+              <p><span class="score"></span>pts</p>
+            </div>
+            <div class="stats-item">
+              <h3>Your Time</h3>
+              <p><span class="time"></span>s</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</section>
+{% endblock %}

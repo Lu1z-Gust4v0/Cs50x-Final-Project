@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    article-page
+{% endblock %}
+
+{% block main %}
+  <section id="article-page">
+    <section class="article-section">
+      <div class="dark-mode">
+        <ion-icon class="moon" name="moon-outline"></ion-icon>
+        <ion-icon class="sun" name="sunny-outline"></ion-icon>
+      </div>
+      <section class="article-content">
+        <article>
+          <header>
+            <h1>Block Chain</h1>
+          </header>
+          <section>
+            <h2>What it is</h2>
+            <p>A blockchain is a growing list of records, called blocks, that are linked together using cryptography. It's also described as a "trustless and fully decentralized peer-to-peer immutable data storage" that is spread over a network of participants often referred to as nodes.Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally represented as a Merkle tree). The timestamp proves that the transaction data existed when the block was published in order to get into its hash. As blocks each contain information about the block previous to it, they form a chain, with each additional block reinforcing the ones before it. Therefore, blockchains are resistant to modification of their data because once recorded, the data in any given block cannot be altered retroactively without altering all subsequent blocks.</p>
+    
+            <p>Blockchains are typically managed by a peer-to-peer network for use as a publicly distributed ledger, where nodes collectively adhere to a protocol to communicate and validate new blocks. Although blockchain records are not unalterable as forks are possible, blockchains may be considered secure by design and exemplify a distributed computing system with high Byzantine fault tolerance.</p>
+    
+            <p>The invention of the blockchain for bitcoin made it the first digital currency to solve the double-spending problem without the need of a trusted authority or central server. The bitcoin design has inspired other applications and blockchains that are readable by the public and are widely used by cryptocurrencies. The blockchain is considered a type of payment rail. </p>
+          </section>
+          <section>
+            <h2>Learn With Videos</h2>
+            <p><a href="https://youtu.be/_160oMzblY8" target="_blank" rel="external">Blockchain 101 - A Visual Demo</a></p>
+          </section>
+        </article>
+      </section>
+    </section>
+  </section>
+{% endblock %}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <link href="/static/styles.css" rel="stylesheet">
+  <script defer src="/static/main.js"></script>
+  <title>Crypto Quiz</title>
+</head>
+<body>
+  {% if session.user_id %}
+  <!-- Navigation Bar -->
+    <nav class="nav-container">
+      <div class="logo-container">
+        <i class='bx bxl-bitcoin'></i>
+        <span>CriptoQuiz</span>
+      </div>
+      <ul class="nav-bar">
+        <li class="nav-item {{home}}">
+          <a href="/home">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Home</span>
+          </a>
+          <div class="span-text">
+            Home
+          </div>
+        </li>
+        <li class="nav-item {{learn}}">
+          <a href="/learn">
+            <ion-icon name="book-outline"></ion-icon>
+            <span>Learn</span>
+          </a>
+          <div class="span-text">
+            Learn
+          </div>
+        </li>
+        <li class="nav-item {{quiz}}">
+          <a href="/quiz">
+            <ion-icon name="school-outline"></ion-icon>
+            <span>Quiz</span>
+          </a>
+          <div class="span-text">
+            Quiz
+          </div>
+        </li>
+        <li class="nav-item {{leaderboard}}">
+          <a href="/leaderboard">
+            <ion-icon name="podium-outline"></ion-icon>
+            <span>Leaderboard</span>
+          </a>
+          <div class="span-text">
+            Leaderboard
+          </div>
+        </li>
+        <li class="nav-item {{profile}}">
+          <a href="/profile">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <span>Profile</span>
+          </a>
+          <div class="span-text">
+            Profile
+          </div>
+        </li>
+        <li class="nav-item logout">
+          <a href="/logout">
+            <ion-icon name="exit-outline"></ion-icon>
+            <span>Logout</span>
+          </a>
+          <div class="span-text">
+            Logout
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- button that opens/closes the navbar  -->
+    <div class="toggle">
+      <ion-icon class="toggle-open" name="menu"></ion-icon>
+      <ion-icon class="toggle-close" name="close"></ion-icon>
+    </div>
+  {% endif %}
+
+  <!-- Pop up a message when needed -->
+  {% if get_flashed_messages() %}
+    <div class="alert-message error">
+      {{ get_flashed_messages() | join(" ") }}
+      <ion-icon class="close-alert" name="close"></ion-icon>
+    </div>
+  {% endif %}
+
+  {% block main %}{% endblock %}
+</body>
+</html>

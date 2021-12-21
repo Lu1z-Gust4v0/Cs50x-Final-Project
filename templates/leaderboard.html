@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    leaderboard-page
+{% endblock %}
+
+{% block main %}
+  <section id="leaderboard-page">
+    <section class="leaderboard-section">
+      <div class="dark-mode">
+        <ion-icon class="moon" name="moon-outline"></ion-icon>
+        <ion-icon class="sun" name="sunny-outline"></ion-icon>
+      </div>
+      <section class="leaderboard-container">
+        <header>
+          <h1>LeaderBoard</h1>
+        </header>
+        <!-- top 3 users -->
+        <div class="podium">
+          {% for row in top_three %}
+            <div class="leaders-card">
+              <div class="user-picture">
+                <img src="{{ row.picture }}" alt="user profile picture">
+              </div>
+              <div class="user-name">
+                <h2>{{ row.username }}</h2>
+              </div>
+              <div class="user-score">
+                <h2>Score</h2>
+                <p>{{ row.score }}pts</p>
+              </div>
+              <div class="user-time">
+                <h2>Time</h2>
+                <p>{{ row.duration }}s</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <table class="leaderboard-table">
+          <tr>
+            <th>
+              <ion-icon name="podium"></ion-icon>Rank
+            </th>
+            <th>
+              <ion-icon name="person"></ion-icon>User
+            </th>
+            <th>
+              <ion-icon name="time"></ion-icon>Time
+            </th>
+            <th>
+              <ion-icon name="star"></ion-icon>Score
+            </th>
+          </tr>
+          {% for i in range(0, (leaderboard_data | length)) %}
+            <tr>
+              <td>#{{ i + 1 }}</td>
+              <td class="user">
+                <img src="{{ leaderboard_data[i].picture }}" alt="">
+                <span>{{ leaderboard_data[i].username }}</span>
+              </td>
+              <td>{{ leaderboard_data[i].duration }}s</td>
+              <td>{{ leaderboard_data[i].score }}pts</td>
+            </tr>
+          {% endfor %}
+        </table>
+      </section>
+    </section>
+  </section>
+{% endblock %}

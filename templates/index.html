@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  index-page
+{% endblock %}
+
+{% block main %}
+  <section id="index-page">
+    <nav class="index__nav-bar">
+      <a class="index__nav-logo" href="#">
+        <i class='bx bxl-bitcoin'></i>
+        CryptoQuiz
+      </a>
+      <ul>
+        <li class="index__nav-item"><a href="/login">login</a></li>
+        <li class="index__nav-item"><a href="/register">sign in</a></li>
+      </ul>
+      <div class="index__toggle">
+        <ion-icon class="toggle-open" name="menu-outline"></ion-icon>
+        <ion-icon class="toggle-close" name="close-outline"></ion-icon>
+      </div>
+    </nav>
+    <main class="index__content">
+      <section class="index__content-card">
+        <header>
+          <h1>Welcome to The Future</h1>
+        </header>
+        <p>Welcome to <span>CryptoQuiz</span>, my Cs50 final project. Here you will learn about the criptocurrencies' world, that will have an essential role in our society in the future, therefore it is important to learn about them. I hope you enjoy my project.
+        </p>
+        <a href="/register">join now</a>
+      </section>
+    </main>
+    <section class="index__image">
+      <img src="/static/images/nakamoto.svg" alt="Bitcoin diagram">
+    </section>
+    <section class="index__media-section">
+      <a class="media__link color-black" href="https://github.com/Lu1z-Gust4v0" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a class="media__link" href="#">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a class="media__link color-dark-blue" href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a class="media__link color-red" href="https://www.youtube.com/channel/UCOBW2ThMs7FJ4vKKXyK1rGw" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+    </section>
+    <div class="dark-mode">
+      <ion-icon class="moon" name="moon-outline"></ion-icon>
+      <ion-icon class="sun" name="sunny-outline"></ion-icon>
+    </div>
+  </section>
+{% endblock %}

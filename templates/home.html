@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    home-page
+{% endblock %}
+
+{% block main%}
+<section id="home-page">
+  <section class="home-section">
+    <div class="dark-mode">
+      <ion-icon class="moon" name="moon-outline"></ion-icon>
+      <ion-icon class="sun" name="sunny-outline"></ion-icon>
+    </div>
+    <section class="home-content">
+      <article>
+        <header>
+          <h1>CryptoQuiz</h1>
+        </header>
+        <section>
+          <h2>What's CryptoQuiz?</h2>
+          <p><span>CryptoQuiz</span> is a platform developed with the purpose of giving people basic understanding about the crypto world, while they have fun solving a quiz related to the cryptoverse.</p>
+        </section>
+        <section>
+          <h2>What you will learn</h2>
+          <p>We are going to talk about 5 different topics related to the cryptoverse: <span>Cryptocurrencies</span>, <span>Blockchain</span>, <span>Wallets</span>, <span>Smart Contrats</span>, and <span>Web 3.0</span>. When you start reading through the articles you will realise that all these topics are somehow related.</p>
+        </section>
+        <section>
+          <h2>Quiz</h2>
+          <p>You will have to solve a quiz about the topics covered in the learning section. The ideia behind this task is to test your learning. Good lucky!!</p>
+        </section>
+        <section>
+          <h2>Leaderboard</h2>
+          <p>Accordingly with your score and the time you took to complete the quiz, you will get a rank in the quiz's leaderboard.</p>
+        </section>
+      </article>
+    </section>
+  </section>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  login-page
+{% endblock %}
+
+{% block main %}
+  <section id="login-page">
+    <section class="form-container login--container">
+      <div class="form-container-img login--container-img">
+        <img src="/static/images/phone.svg" alt="" srcset="">
+      </div>
+      <form class="pattern-form login--form" action="/login" method="POST">
+        <header>
+          <h1>Login</h1>
+        </header>
+        <div class="pattern-form-item login--form-item">
+          <label for="username">
+            <i class='bx bx-user'></i>
+            <span>Username</span>
+          </label>
+          <input type="text" name="username" id="username" autocomplete="off">
+        </div>
+        <div class="pattern-form-item login--form-item">
+          <label for="password">
+            <i class='bx bx-lock-alt'></i>
+            <span>password</span>
+          </label>
+          <input type="password" name="password" id="password" autocomplete="off">
+        </div>
+        <p>Don't have an account? <a href="/register">Register</a></p>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+    <div class="dark-mode">
+      <ion-icon class="moon" name="moon-outline"></ion-icon>
+      <ion-icon class="sun" name="sunny-outline"></ion-icon>
+    </div>
+  </section>
+{% endblock %}
